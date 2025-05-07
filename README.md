@@ -1,12 +1,12 @@
-# 🧠 SSVEP EEG Analysis with Frequency and Amplitude Modulated Stimuli
+# SSVEP EEG Analysis with Frequency and Amplitude Modulated Stimuli
 
-## 🎓 Undergraduate Project Summary
+## Undergraduate Project Summary
 
 This project analyzes the brain’s response to **Steady-State Visual Evoked Potentials (SSVEPs)** using visual stimuli that are **frequency-modulated (FM)** and **amplitude-modulated (AM)**. EEG signals are recorded from occipital and parietal brain regions and processed to evaluate spectral peaks and signal-to-noise ratios (SNRs) at target stimulus frequencies.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 | File | Description |
 |------|-------------|
@@ -18,7 +18,7 @@ This project analyzes the brain’s response to **Steady-State Visual Evoked Pot
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Design visually modulated stimuli using FM and AM techniques.
 - Present these signals via DAQ to a subject.
@@ -29,14 +29,14 @@ This project analyzes the brain’s response to **Steady-State Visual Evoked Pot
 
 ---
 
-## 🧪 Methods
+## Methods
 
-### ✅ Stimulus Generation (`generate_ssvep_stimuli.m`)
+### Stimulus Generation (`generate_ssvep_stimuli.m`)
 - **FM signals**: Created using a sinusoidal carrier modulated in phase by another sine wave.
 - **AM signals**: Created as weighted sums of two sinusoids (e.g., 15 Hz and 30 Hz).
 - Sent to the DAQ device via `queueOutputData`.
 
-### ✅ EEG Analysis (`analyze_ssvep_*.m`)
+### EEG Analysis (`analyze_ssvep_*.m`)
 - 8-second EEG epochs are extracted after each stimulus event.
 - Fast Fourier Transform (FFT) is applied to:
   - Occipital signal
